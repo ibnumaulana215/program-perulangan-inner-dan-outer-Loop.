@@ -1,13 +1,33 @@
-#include <stdio.h>
+#include <iostream>
 #include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+using namespace std;
 
 int main()
 {
-    int i,j;
-    for (i=1; i<=10; i++){
-        for (j=1; j<=5; j++){
-            printf("i= %d,j= %d\t",i,j);
-        }
-    }
+int Hasil;
+cout <<"program iner & outer"<<endl<<endl;
 
+cout<<"Masukan Hasil untuk bintang"<<endl;
+cout<<"masukan Hasilnya: ";cin>>Hasil;
+cout<<endl;
+
+cout<<"bintang"<<endl;
+for(int i=1; i<=Hasil; i++)
+{
+    for(int j=1; j<=i; j++)
+    {
+        cout<<"*";
+
+    }
+    cout<<endl;
 }
+getch();
+return 0;
+}
+
+
+
+
